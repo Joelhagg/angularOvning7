@@ -1,0 +1,6 @@
+<h1>Mata djuren om dom är hungriga!</h1>
+
+  <ul>
+    <app-print-animal *ngFor="let animal of allAnimals" [animal]="animal" (fed)="feedingAnimal(animal.isFed)"></app-print-animal>
+  </ul>
+
